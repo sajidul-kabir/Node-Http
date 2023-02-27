@@ -1,65 +1,15 @@
  
-            Request sent to /public/photo.jpg1 --- Response 404 at 27/02/2023, 16:17:03
+          GET Request sent to /public/sajid.txt --- Response 200 at 27/02/2023, 22:02:06
              
-            Request sent to /public/photo.jpg --- Response 405 at 27/02/2023, 16:17:36
+          GET Request sent to /public/sajid.txt --- Response 200 at 27/02/2023, 22:02:08
              
-            Request sent to /public/photo2.jpg --- Response 404 at 27/02/2023, 16:27:21
+          POST Request sent to /public/sajid.txt --- Response 405 at 27/02/2023, 22:02:41
              
-            Request sent to /public/sajid.txt --- Response 200 at 27/02/2023, 16:28:20
+          POST Request sent to /public/sajid2.txt --- Response 405 at 27/02/2023, 22:02:51
              
-            Request sent to /public/video.mp4 --- Response 200 at 27/02/2023, 16:29:43
+          GET Request sent to /public/sajid2.txt --- Response 404 at 27/02/2023, 22:02:54
              
-            Request sent to /public/video.mp3 --- Response 404 at 27/02/2023, 16:30:00
+          GET Request sent to /public/photo.jpg --- Response 200 at 27/02/2023, 22:03:56
              
-            Request sent to /public/video.mp4 --- Response 200 at 27/02/2023, 16:30:04
-             
-            Request sent to /public/video.mp4 --- Response 200 at 27/02/2023, 16:31:20
-             
-            Request sent to /public/sample.json --- Response 200 at 27/02/2023, 16:31:32
-             
-            Request sent to /public/sample --- Response 404 at 27/02/2023, 16:33:18
-             
-            Request sent to /public/sample.html --- Response 200 at 27/02/2023, 16:33:23
-             
-            Request sent to /public/style/style.css --- Response 404 at 27/02/2023, 16:33:23
-             
-            Request sent to /public/style/search.png --- Response 404 at 27/02/2023, 16:33:23
-             
-            Request sent to /public/style/search.png --- Response 404 at 27/02/2023, 16:33:23
-             
-            Request sent to /public/sample.html --- Response 200 at 27/02/2023, 16:54:13
-             
-            Request sent to /public/style/style.css --- Response 404 at 27/02/2023, 16:54:13
-             
-            Request sent to /public/style/search.png --- Response 404 at 27/02/2023, 16:54:13
-             
-            Request sent to /public/style/search.png --- Response 404 at 27/02/2023, 16:54:13
-             
-            Request sent to /public/sample2.html --- Response 404 at 27/02/2023, 16:54:17
-             
-            Request sent to /public/style/style.css --- Response 404 at 27/02/2023, 16:55:04
-             
-            Request sent to /public/sajid.txt --- Response 200 at 27/02/2023, 16:55:13
-             
-            Request sent to /public/sajid.txt --- Response 404 at 27/02/2023, 17:11:48
-             
-            Request sent to /public/sajid.txt --- Response 200 at 27/02/2023, 17:13:13
-             
-            Request sent to /public/sajid.txt --- Response 200 at 27/02/2023, 17:13:56
-             
-            Request sent to /public/video.mp4 --- Response 200 at 27/02/2023, 17:15:39
-             
-            Request sent to /public/video.mp4 --- Response 200 at 27/02/2023, 17:15:39
-             
-            Request sent to /public/video.mp4 --- Response 200 at 27/02/2023, 17:15:51
-             
-            Request sent to /public/video.mp4 --- Response 200 at 27/02/2023, 17:15:51
-             
-            Request sent to /public/video.mp4 --- Response 200 at 27/02/2023, 17:18:32
-             
-            Request sent to /public/video.mp4 --- Response 200 at 27/02/2023, 17:18:32
-             
-            Request sent to /public/video.mp4 --- Response 200 at 27/02/2023, 17:18:41
-             
-            Request sent to /public/video.mp4 --- Response 200 at 27/02/2023, 17:18:41
+          GET Request sent to /public/photo.jpg1 --- Response 404 at 27/02/2023, 22:04:09
             

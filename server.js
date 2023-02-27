@@ -14,7 +14,7 @@ const server = http.createServer(async (req, res) => {
     await fs.promises.access(filePath);
 
     const stream = fs.createReadStream(filePath);
-    const stats = await fs.promises.stat(filePath);
+    const stats = await fs.promises.stat(filePath, fs.constants.R_OK);
 
     stream.on("error", (err) => {
       console.error(err);
@@ -27,7 +27,7 @@ const server = http.createServer(async (req, res) => {
     });
 
     stream.pipe(res);
-    logger(req.url, 200);
+    logger(req.method, req.url, 200);
   } catch (err) {
     console.log(err.message);
 
@@ -35,13 +35,13 @@ const server = http.createServer(async (req, res) => {
       res.writeHead(405, {
         "Content-type": "text/html",
       });
-      logger(req.url, 405);
+      logger(req.method, req.url, 405);
       res.end(`<h1>${err.message}!</h1>`);
     } else {
       res.writeHead(404, {
         "Content-type": "text/html",
       });
-      logger(req.url, 404);
+      logger(req.method, req.url, 404);
       res.end(`<h1>${err.message}!</h1>`);
     }
   }

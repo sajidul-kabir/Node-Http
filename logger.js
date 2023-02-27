@@ -1,10 +1,10 @@
 const fs = require("fs");
-exports.logger = async (pathname, statusCode) => {
+exports.logger = async (method, pathname, statusCode) => {
   try {
     await fs.promises.appendFile(
       "logs.txt",
       ` 
-            Request sent to ${pathname} --- Response ${statusCode} at ${new Date().toLocaleString(
+          ${method} Request sent to ${pathname} --- Response ${statusCode} at ${new Date().toLocaleString(
         "en-GB",
         { timeZone: "Asia/Dhaka" }
       )}
