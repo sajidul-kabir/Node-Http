@@ -15,10 +15,12 @@ const server = http.createServer(async (req, res) => {
 
     const stream = fs.createReadStream(filePath);
     const stats = await fs.promises.stat(filePath, fs.constants.R_OK);
-
+    let streamError = false;
     stream.on("error", (err) => {
       console.error(err);
-      res.status(500).send("Internal server error");
+      res.writeHead(404).end(`<h1>${err.message}!</h1>`);
+      logger(req.method, req.url, 404);
+      streamError = true;
     });
 
     res.writeHead(200, {
@@ -27,7 +29,12 @@ const server = http.createServer(async (req, res) => {
     });
 
     stream.pipe(res);
-    logger(req.method, req.url, 200);
+    res.on("finish", function () {
+      if (!streamError) {
+        logger(req.method, req.url, 200);
+      } else streamError = false;
+      //console.log('The pipe operation has been completed fully.');
+    });
   } catch (err) {
     console.log(err.message);
 

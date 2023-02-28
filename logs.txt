@@ -12,4 +12,29 @@
           GET Request sent to /public/photo.jpg --- Response 200 at 27/02/2023, 22:03:56
              
           GET Request sent to /public/photo.jpg1 --- Response 404 at 27/02/2023, 22:04:09
+             
+
+             
+          
+       
+             
+         
+             
+          GET Request sent to / --- Response 404 at 28/02/2023, 11:16:05
+             
+          GET Request sent to / --- Response 404 at 28/02/2023, 11:16:20
+             
+          GET Request sent to /hello --- Response 404 at 28/02/2023, 11:16:21
+             
+          GET Request sent to /hello --- Response 404 at 28/02/2023, 11:16:25
+             
+          GET Request sent to /public/large.txt --- Response 200 at 28/02/2023, 11:16:40
+             
+          GET Request sent to / --- Response 404 at 28/02/2023, 11:17:15
+             
+          GET Request sent to / --- Response 404 at 28/02/2023, 11:17:42
+             
+          GET Request sent to /public/large.txt --- Response 200 at 28/02/2023, 11:17:57
+             
+          GET Request sent to /public/large.txt --- Response 200 at 28/02/2023, 11:18:15
             
