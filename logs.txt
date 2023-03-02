@@ -1,40 +1,29 @@
  
-          GET Request sent to /public/sajid.txt --- Response 200 at 27/02/2023, 22:02:06
+          GET Request sent to /public/photo.jpg1 --- Response 404 at 02/03/2023, 16:32:35
              
-          GET Request sent to /public/sajid.txt --- Response 200 at 27/02/2023, 22:02:08
+          GET Request sent to /public --- Response 404 at 02/03/2023, 16:32:46
              
-          POST Request sent to /public/sajid.txt --- Response 405 at 27/02/2023, 22:02:41
+          GET Request sent to /public/sajid.txt --- Response 404 at 02/03/2023, 16:32:54
              
-          POST Request sent to /public/sajid2.txt --- Response 405 at 27/02/2023, 22:02:51
+          GET Request sent to /public/sajid.txt --- Response 401 at 02/03/2023, 16:33:17
              
-          GET Request sent to /public/sajid2.txt --- Response 404 at 27/02/2023, 22:02:54
+          GET Request sent to /public/large.txt --- Response 200 at 02/03/2023, 16:33:28
              
-          GET Request sent to /public/photo.jpg --- Response 200 at 27/02/2023, 22:03:56
+          GET Request sent to /public/video.mp4 --- Response 200 at 02/03/2023, 16:33:55
              
-          GET Request sent to /public/photo.jpg1 --- Response 404 at 27/02/2023, 22:04:09
+          GET Request sent to /public/video.mp4 --- Response 200 at 02/03/2023, 16:33:55
              
-
+          GET Request sent to /favicon.ico --- Response 404 at 02/03/2023, 16:33:55
              
-          
-       
+          GET Request sent to /public/photo.jpg --- Response 200 at 02/03/2023, 16:34:05
              
-         
+          GET Request sent to /public/sajid.txt --- Response 401 at 02/03/2023, 16:34:48
              
-          GET Request sent to / --- Response 404 at 28/02/2023, 11:16:05
+          GET Request sent to /public/sajid.txt --- Response 401 at 02/03/2023, 16:35:28
              
-          GET Request sent to / --- Response 404 at 28/02/2023, 11:16:20
+          GET Request sent to /public/sajid.txt --- Response 401 at 02/03/2023, 16:36:06
              
-          GET Request sent to /hello --- Response 404 at 28/02/2023, 11:16:21
+          GET Request sent to /public/a --- Response 404 at 02/03/2023, 16:36:10
              
-          GET Request sent to /hello --- Response 404 at 28/02/2023, 11:16:25
-             
-          GET Request sent to /public/large.txt --- Response 200 at 28/02/2023, 11:16:40
-             
-          GET Request sent to / --- Response 404 at 28/02/2023, 11:17:15
-             
-          GET Request sent to / --- Response 404 at 28/02/2023, 11:17:42
-             
-          GET Request sent to /public/large.txt --- Response 200 at 28/02/2023, 11:17:57
-             
-          GET Request sent to /public/large.txt --- Response 200 at 28/02/2023, 11:18:15
+          GET Request sent to /public/sajid.txt --- Response 200 at 02/03/2023, 16:41:25
             
