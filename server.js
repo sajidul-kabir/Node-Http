@@ -10,8 +10,10 @@ const server = http.createServer(async (req, res) => {
       throw new Error("Wrong method");
     }
 
+    req.url = req.url.replace(/%20/g, " ");
     const filePath = __dirname + req.url;
     const stats = await fs.promises.lstat(filePath, fs.constants.R_OK);
+
     if (stats.isDirectory()) {
       throw new Error("Directory, not a file");
     }
@@ -20,14 +22,23 @@ const server = http.createServer(async (req, res) => {
 
     stream.on("error", (err) => {
       streamError = true;
-      logger(req.method, req.url, 500);
-      myError(`STREAM ERROR---${err.message}`, 500, res);
+      if (err.code === "EACCES") {
+        logger(req.method, req.url, 401);
+        myError(`Access denied------${err.message}`, 401, res);
+      } else {
+        logger(req.method, req.url, 500);
+        myError(`STREAM ERROR---${err.message}`, 500, res);
+      }
     });
     stream.on("open", () => {
       res.writeHead(200, {
         "Content-Length": stats.size,
         "Content-Type": getContentType(filePath),
       });
+    });
+    res.on("error", (err) => {
+      logger(req.method, req.url, 500);
+      myError(`ERROR in write stream---${err.message}`, 500, res);
     });
     res.on("finish", function () {
       if (!streamError) {

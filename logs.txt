@@ -26,4 +26,17 @@
           GET Request sent to /public/video.mp4 --- Response 200 at 03/03/2023, 20:44:22
              
           GET Request sent to /public/sajid.txt --- Response 401 at 03/03/2023, 20:44:26
+             
+          GET Request sent to /public/photo.jpg --- Response 200 at 05/03/2023, 10:29:23
+             
+          GET Request sent to /favicon.ico --- Response 404 at 05/03/2023, 10:29:23
+             
+          GET Request sent to /public/photo.jpg1 --- Response 404 at 05/03/2023, 10:29:26
+             
+          GET Request sent to /public/ --- Response 404 at 05/03/2023, 10:29:29
+             
+          GET Request sent to /public --- Response 404 at 05/03/2023, 10:29:32
+
+             
+
             
